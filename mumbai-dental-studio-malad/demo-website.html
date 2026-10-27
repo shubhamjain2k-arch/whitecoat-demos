@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mumbai Dental Studio — Malad West, Mumbai</title>
+<style>
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#222;background:#fff8f0;line-height:1.6}
+img{max-width:100%}a{color:inherit}input,select,textarea{width:100%;padding:11px;margin:6px 0 14px;border:1px solid #ddd;border-radius:12px;box-sizing:border-box;font:inherit}
+button{padding:13px 26px;border:0;border-radius:999px;cursor:pointer;font-weight:700;background:#ff385c;color:#fff}
+.illus{font-size:13px;color:#717171}header{display:flex;justify-content:space-between;padding:20px 6%}header strong{font-size:22px}
+.hero{padding:6px 6% 36px} .hero img{width:100%;height:400px;object-fit:cover;border-radius:24px}
+.hero h1{font-size:44px;line-height:1.1;margin:18px 0 8px} .pill{display:inline-block;background:#ff385c;color:#fff;padding:6px 14px;border-radius:999px;font-size:14px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;padding:0 6% 40px} .card{background:#fff;border-radius:20px;padding:24px;box-shadow:0 2px 14px rgba(0,0,0,.06)} .card h3{margin:0 0 6px}
+.doc{background:#222;color:#fff;border-radius:24px;margin:0 6% 40px;padding:34px} section{padding:10px 6%} .lede{font-size:18px;color:#484848}
+.hours{background:#fff;border:1px solid #e5e5e5;border-radius:20px;padding:24px;margin:0 6% 20px} footer{padding:24px 6%;color:#717171;font-size:14px}
+@media(max-width:700px){.cards{grid-template-columns:1fr}.hero h1{font-size:32px}.hero img{height:240px}}
+</style></head><body>
+<header><strong>Mumbai Dental Studio</strong><span>Malad West</span></header>
+<div class="hero"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1400&auto=format&fit=crop" alt="Dentist with patient in clinic"><p class="illus">Photos shown are illustrative.</p>
+<span class="pill">Malad West, Mumbai</span>
+<h1>A friendly studio for your smile.</h1>
+<p class="lede">General care, smile work, children's dentistry and implants — in one welcoming studio at Evershine Nagar, with a doctor you can meet by name.</p>
+<a href="#book"><button>Book a visit</button></a></div>
+<div class="doc"><h2 style="margin-top:0">Meet Dr. Kanupriya Saxena</h2>
+<p>B.D.S., M.D.S. — Head Doctor at Mumbai Dental Studio, Malad West. The studio covers the full range below, so a check-up, a smile plan and a child's first visit can all happen in the same place.</p>
+<p>Shop No. 3, New Rupali Building, Evershine Nagar, Malad West, Mumbai.</p></div>
+<section><h2>What the studio covers</h2><div class="cards"><div class='card'><h3>General Dentistry</h3><p>Everyday dental care: check-ups, cleaning, fillings and advice.</p></div>
+<div class='card'><h3>Aesthetic Dentistry</h3><p>Treatments focused on how your smile looks, planned around your teeth.</p></div>
+<div class='card'><h3>Smile Designing</h3><p>A plan for the shape, shade and alignment of your smile, agreed with you first.</p></div>
+<div class='card'><h3>Paediatric Dentistry</h3><p>Gentle dental care for children, including check-ups and fillings.</p></div>
+<div class='card'><h3>Dental Implants</h3><p>Replaces a missing tooth with a fixed, natural-feeling replacement.</p></div>
+<div class='card'><h3>Cosmetic Dentistry</h3><p>Treatments that improve the appearance of teeth and smile.</p></div>
+<div class='card'><h3>Orthodontics</h3><p>Correction of crowded, spaced or misaligned teeth and bite.</p></div>
+<div class='card'><h3>Endodontics</h3><p>Care for the inside of the tooth, including root canal treatment.</p></div>
+<div class='card'><h3>Periodontics</h3><p>Care for gums and the bone that supports the teeth.</p></div></div></section>
+<section><h2>Your visit, in three steps</h2>
+<p><strong>1. Enquire</strong> — use the form below and say what you need.<br><strong>2. Visit</strong> — come to Evershine Nagar, Malad West.<br><strong>3. Keep smiling</strong> — agree your plan with the studio and follow it at your own pace.</p></section>
+<div class="hours"><strong>Clinic timing:</strong> Monday to Saturday, 10:00 AM – 10:00 PM. Sunday closed.<br>Contact: kanupriyasaxena969@gmail.com</div>
+<section><h2>Care, up close</h2><img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1000&auto=format&fit=crop" alt="Dental care" style="width:100%;height:300px;object-fit:cover;border-radius:16px"><p class="illus">Photos shown are illustrative. A calm treatment room, ready for your visit.</p></section>
+<section id="book"><h2>Request an appointment</h2>
+<p class="lede">Tell the clinic what you need help with and when you can visit. This demo form confirms on screen only.</p>
+<form onsubmit="return submitForm(event)" novalidate>
+<label>Your name<input name="name" required></label>
+<label>Phone<input name="phone" required></label>
+<label>What do you need help with?<select name="treatment"><option>General Dentistry</option><option>Aesthetic Dentistry</option><option>Smile Designing</option><option>Paediatric Dentistry</option><option>Dental Implants</option><option>Cosmetic Dentistry</option><option>Orthodontics</option><option>Endodontics</option><option>Periodontics</option></select></label>
+<label>Message<textarea name="message" rows="3" required placeholder="Briefly describe what you need"></textarea></label>
+<p class="form-error" style="display:none">Please fill in your name, phone and message.</p>
+<p class="form-ok" style="display:none">Thank you — your request has been noted on screen. This demo preview sends nothing anywhere.</p>
+<button type="submit">Request an appointment</button>
+<p class="form-note">Demo preview: this form confirms on screen and sends nothing.</p>
+</form></section>
+<footer>Mumbai Dental Studio, Malad West, Mumbai. Demo preview: this page is a design preview for the clinic. Photos shown are illustrative.</footer>
+
+<script>
+function submitForm(e){e.preventDefault();var f=e.target;
+var name=f.querySelector('[name=name]').value.trim();
+var phone=f.querySelector('[name=phone]').value.trim();
+var msg=f.querySelector('[name=message]').value.trim();
+var err=f.querySelector('.form-error');var ok=f.querySelector('.form-ok');
+if(!name||!phone||!msg){err.style.display='block';ok.style.display='none';return false;}
+err.style.display='none';ok.style.display='block';f.querySelector('button[type=submit]').textContent='Request noted';
+return false;}
+</script></body></html>
