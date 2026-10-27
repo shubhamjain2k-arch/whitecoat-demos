@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ashok Dental Clinic — Vikaspuri, Delhi</title>
+<style>
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#1d1d1f;background:#fff;line-height:1.6;text-align:center}
+img{max-width:100%}a{color:inherit}input,select,textarea{width:100%;padding:12px;margin:6px 0 14px;border:1px solid #d2d2d7;border-radius:12px;box-sizing:border-box;font:inherit}
+button{background:#0071e3;color:#fff;border:0;border-radius:999px;padding:13px 30px;cursor:pointer;font-weight:600;font-size:16px}
+.illus{font-size:13px;color:#86868b}header{padding:22px}h1{font-size:56px;font-weight:600;letter-spacing:-.02em;margin:30px 0 10px;line-height:1.05}
+h2{font-size:32px;font-weight:600} .sub{font-size:20px;color:#6e6e73;max-width:640px;margin:0 auto}
+.list{max-width:720px;margin:40px auto;text-align:left} .item{padding:24px 0;border-bottom:1px solid #e8e8ed} .item p{color:#6e6e73;margin:6px 0 0}
+section{padding:30px 6%} form{max-width:560px;margin:0 auto;text-align:left} .lede{color:#6e6e73;font-size:18px;max-width:640px;margin:16px auto}
+.heroimg{width:100%;max-width:980px;height:420px;object-fit:cover;border-radius:20px;margin:30px auto 0;display:block}
+footer{padding:28px 6%;color:#86868b;font-size:14px}
+@media(max-width:700px){h1{font-size:38px}.heroimg{height:240px}}
+</style></head><body>
+<header>Ashok Dental Clinic · Vikaspuri, Delhi</header>
+<h1>Simple. Clear.<br>Good dentistry.</h1>
+<p class="sub">One clinic in Vikaspuri, a full list of treatments, and a form that actually works.</p>
+<img class="heroimg" src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1400&auto=format&fit=crop" alt="Dental clinic interior"><p class="illus">Photos shown are illustrative.</p>
+<p style="margin-top:28px"><a href="#book"><button>Request an appointment</button></a></p>
+<section><h2>Treatments</h2><p class="lede">Every treatment below is listed by the clinic. The line under each one says, in plain words, what it is for.</p>
+<div class="list"><div class='item'><strong>Paediatric Dentistry</strong><p>Gentle dental care for children, including check-ups and fillings.</p></div>
+<div class='item'><strong>Orthodontics Braces</strong><p>Braces that gradually straighten teeth and correct bite.</p></div>
+<div class='item'><strong>Dentures — Fixed and Removable</strong><p>Replacements for missing teeth, fixed in place or removable.</p></div>
+<div class='item'><strong>Teeth Whitening</strong><p>Lightens stains on the teeth for a brighter smile.</p></div>
+<div class='item'><strong>Smile Design</strong><p>A plan for the shape, shade and alignment of your smile, agreed with you first.</p></div>
+<div class='item'><strong>Root Canal Treatment</strong><p>Treats infection inside a tooth, to relieve pain and save the natural tooth.</p></div>
+<div class='item'><strong>Gum Disease Treatment and Surgery</strong><p>Treatment for infected or receding gums, including surgical care when needed.</p></div>
+<div class='item'><strong>Aesthetic Restoration</strong><p>Tooth-coloured repairs that restore a damaged tooth to look natural.</p></div>
+<div class='item'><strong>Tooth Extraction</strong><p>Removes a tooth that cannot be saved or is causing harm.</p></div>
+<div class='item'><strong>Dental Implant Fixing</strong><p>Placement and fitting of implants to replace missing teeth.</p></div>
+<div class='item'><strong>Dental OPG</strong><p>A full-mouth X-ray that shows all teeth and jaws in one image.</p></div></div></section>
+<section><h2>Your visit</h2><p class="lede">Enquire below, visit the Vikaspuri clinic, and agree your treatment there — no jargon, no runaround.</p></section>
+<section><p><strong>Address:</strong> Pocket-A/74-A, Vikaspuri Extension, Outer Ring Road, Opp. Pillar No. 12, New Delhi 110018.<br><strong>Email:</strong> drashokgambhir@hotmail.com</p></section>
+<section><h2>Care, up close</h2><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1000&auto=format&fit=crop" alt="Dental care" style="width:100%;height:300px;object-fit:cover;border-radius:16px"><p class="illus">Photos shown are illustrative. Clear dentistry, without the jargon.</p></section>
+<section id="book"><h2>Request an appointment</h2>
+<p class="lede">Tell the clinic what you need help with and when you can visit. This demo form confirms on screen only.</p>
+<form onsubmit="return submitForm(event)" novalidate>
+<label>Your name<input name="name" required></label>
+<label>Phone<input name="phone" required></label>
+<label>What do you need help with?<select name="treatment"><option>Paediatric Dentistry</option><option>Orthodontics Braces</option><option>Dentures — Fixed and Removable</option><option>Teeth Whitening</option><option>Smile Design</option><option>Root Canal Treatment</option><option>Gum Disease Treatment and Surgery</option><option>Aesthetic Restoration</option><option>Tooth Extraction</option><option>Dental Implant Fixing</option><option>Dental OPG</option></select></label>
+<label>Message<textarea name="message" rows="3" required placeholder="Briefly describe what you need"></textarea></label>
+<p class="form-error" style="display:none">Please fill in your name, phone and message.</p>
+<p class="form-ok" style="display:none">Thank you — your request has been noted on screen. This demo preview sends nothing anywhere.</p>
+<button type="submit">Request an appointment</button>
+<p class="form-note">Demo preview: this form confirms on screen and sends nothing.</p>
+</form></section>
+<footer>Ashok Dental Clinic, Vikaspuri, Delhi. Demo preview: this page is a design preview for the clinic. Photos shown are illustrative.</footer>
+
+<script>
+function submitForm(e){e.preventDefault();var f=e.target;
+var name=f.querySelector('[name=name]').value.trim();
+var phone=f.querySelector('[name=phone]').value.trim();
+var msg=f.querySelector('[name=message]').value.trim();
+var err=f.querySelector('.form-error');var ok=f.querySelector('.form-ok');
+if(!name||!phone||!msg){err.style.display='block';ok.style.display='none';return false;}
+err.style.display='none';ok.style.display='block';f.querySelector('button[type=submit]').textContent='Request noted';
+return false;}
+</script></body></html>
